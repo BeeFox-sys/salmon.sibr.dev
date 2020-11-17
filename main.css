@@ -15,19 +15,12 @@ body{
     font-size: 1.4rem;
 }
 
-span{
+.spinner{
     cursor: pointer;
     display: inline-block;
-    rotate: 360deg;
-    transition: 10s;
+    rotate: 0deg;
 }
 .spin{
-    /* font-size: 1.2em; */
-    animation: spin 1s;
-    transition: 10s;
+    rotate: 360deg;
+    transition: 1s;
 }
-
-@keyframes spin{
-    from {rotate: 0deg;};
-    to {rotate: 360deg;};
-};
