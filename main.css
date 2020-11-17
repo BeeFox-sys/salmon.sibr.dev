@@ -18,9 +18,11 @@ body{
 .spinner{
     cursor: pointer;
     display: inline-block;
-    rotate: 0deg;
+    /* rotate: 0deg; */
+    transform: rotate(0deg)
 }
 .spin{
-    rotate: 360deg;
+    /* rotate: 360deg; */
+    transform: rotate(360deg);
     transition: 1s;
 }
