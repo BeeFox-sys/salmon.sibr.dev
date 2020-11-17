@@ -15,12 +15,18 @@
     <meta property="description" content="That time we hacked a salmon harvest modeling program for blaseball purposes">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="main.css">
-    <script src="index.js"></script>
+    <script>
+        function spin(elmt){
+            if(elmt.classList.contains("spin"))return
+            elmt.classList.add("spin")
+            setTimeout(()=>{elmt.classList.remove("spin")},1000)
+        }
+    </script>
 </head>
 <body>
     <div class="content">
         <h2>Coming Soon!</h2>
-        <p>🐟</p>
+        <p><span class="spinner" onclick="spin(this)">🐟</span></p>
         <p>&ndash;Your friends at <a href="https://sibr.dev/">SIBR</a></p>
     </div>
 </body>
