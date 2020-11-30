@@ -22,12 +22,12 @@
         <meta name="twitter:description" content="That time we hacked a salmon harvest modeling program for blaseball purposes">
         <style>
             @font-face{font-family:'D-DIN Condensed';font-weight:bold;font-display:swap;src:url("https://sibr.dev/assets/D-DINCondensed-Bold.woff2") format("woff2")}*{box-sizing:border-box;margin:0}body{font-family:'Crimson Pro', serif;font-size:16pt;line-height:1.5}a{text-decoration:none;color:#265192}a:hover{text-decoration:underline}h1,h2,h3,h4,nav{font-family:'D-DIN Condensed';letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#112441}code,pre{font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}code{font-size:13pt;background-color:#eee;padding:0.125rem 0.25rem;letter-spacing:-0.02em}ol li::marker{color:#222;padding-right:1rem}nav{text-align:center}nav ul{list-style:none;padding:0;margin:0}nav ul.icons li{display:inline-block;height:1.5em;line-height:1}nav ul.icons li img{vertical-align:middle;height:1.5em}.major-projects{display:flex;justify-content:space-between;flex-wrap:wrap;list-style:none;padding:0}.major-projects li{margin-bottom:1.5em}.major-projects li img{width:100%}.major-projects li img:hover{filter:brightness(90%);transition:0.2s}footer{font-size:10pt;text-align:center;color:var(#9a7d7f)}.center{text-align:center}.floaty{filter:invert(100%);-webkit-animation-direction:alternate;animation-direction:alternate;-webkit-animation-name:floaty-ticket;animation-name:floaty-ticket;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}.project{margin-bottom:1em}.project .project-title,.project .properties{display:flex;align-items:center}.project .category,.project .role{background-color:#000;color:#fff;padding:0.25em 0.4em;border-radius:0.25em;margin:0 0.25em;font-size:0.75em;line-height:1em;display:inline-block;font-family:'D-DIN Condensed'}.project .category.role-backend,.project .category.category-archivism,.project .role.role-backend,.project .role.category-archivism{background-color:#e74c3c}.project .category.role-frontend,.project .category.category-view,.project .role.role-frontend,.project .role.category-view{background-color:#dba520}.project .category.role-math,.project .category.category-analysis,.project .role.role-math,.project .role.category-analysis{background-color:#358cdb}.project .category.role-devops,.project .category.category-betting,.project .role.role-devops,.project .role.category-betting{background-color:#000}.project .category.role-misc,.project .category.category-misc,.project .role.role-misc,.project .role.category-misc{background-color:#50acce}.project .category.category-past-games,.project .role.category-past-games{background-color:#9370db}.project .category.category-datablase,.project .role.category-datablase{background-color:#9d7c61}.project .category.category-api,.project .role.category-api{background-color:#83bb17}.project .category.category-paper,.project .role.category-paper{background-color:#3d918b}.project .category.category-scripts,.project .role.category-scripts{background-color:#fca3b7}@-webkit-keyframes floaty-ticket{0%{transform:translateY(10px)}}@keyframes floaty-ticket{0%{transform:translateY(10px)}}@media (max-width: 1279px){body{margin:40px;grid-gap:40px;font-size:16pt}header{display:flex;align-items:center}header .logo img{width:180px;margin-right:40px}nav{font-size:1.25em;line-height:1.25}nav .nav-icon img{line-height:1.25}nav ul{display:flex;margin:0;flex-wrap:wrap}nav ul.links li{padding-right:1ch}.major-projects{justify-content:center}.major-projects li{width:50%}.major-projects li:nth-child(2n+1){padding-right:20px}.major-projects li:nth-child(2n){padding-left:20px}.mission{font-size:1.25em}}@media (max-width: 768px){body{margin:20px;grid-gap:20px;font-size:14pt}header .logo img{width:90px;margin-right:20px}.major-projects li{width:100%}.major-projects li:nth-child(2n+1),.major-projects li:nth-child(2n){padding:0}}@media (min-width: 1280px){body{width:1152px;margin:64px auto;display:grid;grid-template-columns:240px 848px;grid-column-gap:64px}header{grid-column:1}header .logo img{width:100%}nav{margin-top:1em;font-size:2rem}main{grid-column:2}main :first-child{margin-top:0}.mission{font-size:1.5em}.major-projects li{width:408px;margin-bottom:1.5em}footer{grid-column:2}}
-            main h1, main p {margin-bottom: 8px;}
+            main, main h1, main p {margin-bottom: 8px;}
             main sup {font-size: 14px; cursor: pointer; user-select: none;}
             main div.figure {font-size: 12pt; margin-bottom: 8px; text-align: center; width: 100%;}
             main div.figure img {max-width: 100%;}
-            main div.explainer {background-color: #eee;}
-            main div.explainer > div {display: none; padding: 18px;}
+            main div.explainer {background-color: #eee; margin-bottom: 16px;}
+            main div.explainer > div {display: none; padding: 16px;}
             main div.explainer > button {
                 border: none;
                 color: inherit;
@@ -35,12 +35,13 @@
                 display: block;
                 font-size: 18px;
                 font-family: inherit;
-                padding: 18px;
+                padding: 16px;
                 text-align: left;
                 text-decoration: none;
                 width: 100%;
             }
             main div.explainer > button:hover {background-color: #ddd;}
+            main hr {margin: 24px 0;}
         </style>
     </head>
     <body>
@@ -87,7 +88,6 @@
                     button.nextElementSibling.style.display = 'block';
                 }
             </script>
-            <br>
             <div class="figure"><img src="crisp_blaseball.png" alt="Screenshot of the CRiSP Harvest v3.0.6 user interface. Its traced map of the Pacific Northwest has been replaced with an overly detailed render of all of North America, Japan, and Hawai'i. There are little ship icons demarking the locations of assorted blaseball teams. The Canada Moist Talkers are missing from Halifax, for some reason." /></div>
             <p>During the Season 3 finals, <a href="https://www.blaseball.wiki/w/Landry_Violence">Landry Violence</a>, beloved batter for the Hades Tigers, was <a href="https://reblase.sibr.dev/game/aa1b7fde-f077-4e4b-825f-0d1538d02822#97c67b5e-bac2-1254-41f8-fce0ef994d73">incinerated</a> by a rogue umpire. From that moment, fans on the Blaseball Discord server began typing &ldquo;RIV&rdquo; (&ldquo;Rest in Violence&rdquo;), instead of &ldquo;RIP&rdquo; (&ldquo;Rest in Peace&rdquo;). The term was later canonized by The Game Band, who made &ldquo;Rest in Violence&rdquo; the official subtitle for <a href="https://www.blaseball.wiki/w/Season_8">Season 8</a>.</p>
 
@@ -117,11 +117,8 @@
             <p>SIBR's research into the CRiSP Harvest Model continues: both to convince the software to display ever more blaseball information, and to learn more on the sociopolitical history which led to its creation. Salmon Steve is welcome back anytime.</p>
 
             <div class="figure"><img src="salmon_dominoes.png" alt="Modified version of the dominoes meme template. In the template, a man is kneeling and pushing over a tiny domino. Each successive domino is about 50% bigger, and the twelveth domino is nearly a meter tall. The tiny domino is labeled 'landry violence incinerated in the season 3 finals'. The giant domino is labeled 'the hunt for salmon steve reveals the true dangers of dam flow induced nitrogen spikes to downriver fish population'." /><br><i>PC: Discord user Melpomene#4150</i></div>
-            <br>
             <hr>
-            <br>
             <p><strong>UPDATE:</strong> We chatted with Salmon Steve, and in honor of this story and SIBR Monday, we are <strong>running a fundraiser for <a href="https://give.classy.org/SalmonSteve">Girls Who Code</a></strong>. SIBR fully believes in gender, racial, and mental diversity in tech, and will be matching up to $1000 of donations. If you can, please consider donating <strong><a href="https://give.classy.org/SalmonSteve">here</a></strong>. Thanks!</p>
-            <br>
         </main>
         <footer>
             <p>SIBR is neither endorsed by nor directly affiliated with The Game Band.</p>
