@@ -14,20 +14,38 @@
     <meta property="og:description" content="That time we hacked a salmon harvest modeling program for blaseball purposes">
     <meta property="description" content="That time we hacked a salmon harvest modeling program for blaseball purposes">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap">
     <link rel="stylesheet" href="main.css">
+    <style type="text/css">
+        @font-face{font-family:'D-DIN Condensed';font-weight:bold;font-display:swap;src:url("https://sibr.dev/assets/D-DINCondensed-Bold.woff2") format("woff2")}*{box-sizing:border-box;margin:0}body{font-family:'Crimson Pro', serif;font-size:16pt;line-height:1.5}a{text-decoration:none;color:#265192}a:hover{text-decoration:underline}h1,h2,h3,h4,nav{font-family:'D-DIN Condensed';letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#112441}code,pre{font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}code{font-size:13pt;background-color:#eee;padding:0.125rem 0.25rem;letter-spacing:-0.02em}ol li::marker{color:#222;padding-right:1rem}nav{font-size:1.25em;text-align:center}nav ul{list-style:none;padding:0;margin:0}nav ul.icons li{display:inline-block;height:1.5em;line-height:1}nav ul.icons li img{vertical-align:middle;height:1.5em}
+        img.logo {width: 240px;}
+    </style>
     <script>
         function spin(elmt){
-            if(elmt.classList.contains("spin"))return
-            elmt.classList.add("spin")
-            setTimeout(()=>{elmt.classList.remove("spin")},1000)
+            if (elmt.classList.contains('spin')) {
+                return;
+            }
+            elmt.classList.add('spin');
+            setTimeout(() => {elmt.classList.remove('spin')}, 1000);
         }
     </script>
 </head>
 <body>
     <div class="content">
         <h2>Coming Soon!</h2>
-        <p><span class="spinner" onclick="spin(this)">🐟</span></p>
+        <br>
+        <nav>
+            <ul class="links">
+                <li><a href="steve.html">The Saga of Salmon Steve</a></li>
+                <p><span class="spinner" onclick="spin(this)">🐟</span></p>
+                <li><a href="https://give.classy.org/SalmonSteve">Fundraiser</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
         <p>&ndash;Your friends at <a href="https://sibr.dev/">SIBR</a></p>
+        <br>
+        <img class="logo" src="salmon-logo.svg" alt="Salmon Institute for Blaseball Research">
     </div>
 </body>
 </html>
