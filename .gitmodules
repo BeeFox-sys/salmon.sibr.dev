@@ -1,0 +1,3 @@
+[submodule "webcrisp-frontend"]
+	path = webcrisp-frontend
+	url = https://github.com/Society-for-Internet-Blaseball-Research/webcrisp-frontend.git
